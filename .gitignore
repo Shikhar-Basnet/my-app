@@ -1,0 +1,5 @@
+# Example for Node.js
+echo "node_modules/
+.env
+dist/
+.DS_Store" > .gitignore

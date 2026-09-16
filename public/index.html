@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GCP VM App</title>
+</head>
+<body>
+  <h1>My GCP VM App</h1>
+  <button onclick="fetchHello()">Call API</button>
+  <p id="response"></p>
+
+  <script>
+    async function fetchHello() {
+      const res = await fetch('/api/hello');
+      const data = await res.json();
+      document.getElementById('response').innerText = data.message;
+    }
+  </script>
+</body>
+</html>
